@@ -41,60 +41,10 @@ export const Hero = () => {
 
     // Load badge files
     const badges = [
-      "04d18713ec095cf63a2102d411f9d0ebc84a6273.gif",
-      "0ac750731dcb109dab569932b91efaf160880435.gif",
-      "0e232f90becee81ae4a0b1161448d586e3425238.gif",
-      "1043814kmdus1e2ab.gif",
-      "1088782t5zwbgi76y.gif",
-      "1089220h7pmmxiw93.gif",
-      "1089245kxon25s0le.gif",
-      "1293696lbtwyt13y9.gif",
-      "1293698oaoft8vdel.gif",
-      "12villainous.gif",
-      "15a147d58cd55027839f33b91ee4db656b921a4d.gif",
-      "18alien.gif",
-      "1ac63c8af67998deb4ffd0b8ed62eed35ad5d9e9.gif",
-      "1df9f85349888958814dbbdcbd4c64508195ce7f.gif",
-      "1e51f3e716d78b9010140ab4971adb00fc9bfa74.gif",
-      "20smartass.gif",
-      "21dumbass.gif",
       "23boyfriend.gif",
-      "2764415xj3pv45mbf.gif",
-      "2772557bz1z5vth1s.gif",
-      "2772590dn8c6pxzzo.gif",
-      "2789572pqxes63q9a.gif",
-      "29obsessed (1).gif",
-      "29obsessed.gif",
       "2aaf3dcb8f0630a5191ec61623806e97bcde73d6.gif",
-      "2e29c1af2336909789efb50163dddea8c0a64084.gif",
-      "3051835p0lk6syoql.gif",
-      "37a080e960879267dbba6cc226aa853c7d82f2d4.gif",
-      "3ffda3d115c2e91f2216b38a9baa80049d841f42.gif",
-      "4hater.gif",
-      "5c12c1ce217575d5cb562f131b02b1931b4ccdf5.gif",
-      "5e527faf4c89c852a024eb6733266e31740aecd0.gif",
-      "735843esbed7q1ih.gif",
-      "763aeebbf4c4464ca1bf24626e59f4fe711f8189.gif",
-      "7d4b2ee473b1a9a196a0e2c042d67cc006cdb360.png",
-      "80ce2f4cac8d4f0d532d3a82e5300f7b2f2aa27f.gif",
-      "820423122875aa3705433d42f8ebe2c1777a54a9.gif",
-      "8a98c29feb6c3309146fdb87e366c26c1dd8e25d.gif",
-      "8cab199749cdaa11ad7a786669a92baa306dd1bf.gif",
-      "95ab58faf08467e717194f6dbb0a476b93bc9efa.gif",
-      "a7891c8a9d84765413325adce5fa27ac401aa3b1.gif",
-      "aa4c83d78feb97f55c365c3f0b69f7b6bc6aa488.gif",
-      "adcb215d4702987087f4fc7447b93ee40aec868e.gif",
-      "c820589d188ca8a4cd6f8e3eb755c94819618b37.gif",
-      "de3b8429162e360ef7fce51f7f7558e2f174f4f7.gif",
-      "e81407bec01f1ec46dffd173357a96696ba25547.gif",
-      "e8cfe8b5be5352bcfcb9ce03a5950e23912d2273.gif",
-      "eb3de553a55485e487b40e487683f1eb7e212d6d.gif",
-      "f3a49596c06d6ed426bf0994d1c86263f68d7c47.gif",
-      "fec830c25d7cda85f78e62682016dabe745aa099.gif",
-      "tr98ev.gif",
-      "tumblr_inline_pdzcepDGgt1v11djx_500.gif",
       "tumblr_inline_pdzcjy1He11v11djx_500.gif",
-      "tumblr_inline_pdzfbqd2la1v11djx_500.gif",
+      "e8cfe8b5be5352bcfcb9ce03a5950e23912d2273.gif",
     ];
     setBadgeFiles(badges);
 
@@ -154,7 +104,7 @@ export const Hero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center overflow-auto hero-wrapper">
+    <section className="relative flex items-center justify-center w-full min-h-screen overflow-auto hero-wrapper">
       {/* Background Images with Opacity Transition */}
       <div
         className="fixed inset-0 transition-opacity duration-150 ease-in-out"
@@ -187,7 +137,7 @@ export const Hero = () => {
         }}
       />
       {/* Aurora Background Effect */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+      <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
         <div
           style={
             {
@@ -218,7 +168,7 @@ export const Hero = () => {
       </div>
 
       {/* Avatar - Top Left Corner */}
-      <div className="fixed top-0 left-0 p-2 sm:p-3 md:p-4 z-30">
+      <div className="fixed top-0 left-0 z-30 p-2 sm:p-3 md:p-4">
         <Avatar
           frameSize="60px"
           avatarSize="40px"
@@ -227,79 +177,30 @@ export const Hero = () => {
       </div>
 
       {/* Theme Switch - Top Right Corner */}
-      <div className="fixed top-0 right-0 p-4 sm:p-5 md:p-6 z-30">
+      <div className="fixed top-0 right-0 z-30 p-4 sm:p-5 md:p-6">
         <ThemeSwitch />
       </div>
 
       {/* Main Container */}
       <div
-        className="relative z-10 w-full container"
+        className="container relative z-10 w-full"
         style={{ marginTop: 0, paddingTop: 0 }}
       >
         {/* Navigation Header */}
         <nav>
-          <div className="top">
-            <div className="left">
-              <a href="/">
-                <img
-                  className="logo"
-                  src="https://spacehey.com/img/logo.svg"
-                  alt="Zespace.com"
-                />
-              </a>
-            </div>
-          </div>
           <ul className="links">
             <li>
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/browse">Browse</a>
-            </li>
-            <li>
-              <a href="/search">Search</a>
-            </li>
-            <li>
-              <a href="/blog">
-                Blog{" "}
-                <img
-                  src="https://spacehey.com/img/icons/new.png"
-                  className="icon"
-                  aria-hidden="true"
-                  loading="lazy"
-                  alt="icon"
-                />
-              </a>
+              <a href="/blog">Blog </a>
             </li>
             <li>
               <a href="/music">Music</a>
             </li>
             <li>
-              <a href="/favorites">Favorites</a>
-            </li>
-            <li>
-              <a href="/soon" className="soon">
-                Invite
-              </a>
-            </li>
-            <li>
               <a href="/soon" className="soon">
                 Mail
-              </a>
-            </li>
-            <li>
-              <a href="/soon" className="soon">
-                Forum
-              </a>
-            </li>
-            <li>
-              <a href="/soon" className="soon">
-                Groups
-              </a>
-            </li>
-            <li>
-              <a href="/soon" className="soon">
-                Events
               </a>
             </li>
             <li>
@@ -316,7 +217,7 @@ export const Hero = () => {
         <main>
           <div className="row profile">
             {/* Left Column */}
-            <div className="col w-40 left">
+            <div className="w-40 col left">
               <h1>Zengel</h1>
               <div className="general-about">
                 <div className="profile-pic">
@@ -335,45 +236,34 @@ export const Hero = () => {
                   </p>
                 </div>
               </div>
-              <div className="mood">
-                <p>
-                  <b>Mood:</b>
-                </p>
-                <p>
-                  <b>
-                    View my: <a href="#">Blog</a> | <a href="#">Pics</a> |{" "}
-                    <a href="#">Videos</a>
-                  </b>
-                </p>
-              </div>
               <div className="contact">
                 <div className="heading">
-                  <h4>Contacting Zengel</h4>
+                  <h4>You can find me here</h4>
                 </div>
                 <div className="inner">
                   <div className="f-row">
                     <div className="f-col">
                       <a href="#">
                         <img
-                          src="https://spacehey.com/img/icons/add.png"
+                          src="logos/facebook.png"
                           className="icon"
                           aria-hidden="true"
                           loading="lazy"
                           alt="icon"
                         />{" "}
-                        Add to Friends
+                        Facebook
                       </a>
                     </div>
                     <div className="f-col">
                       <a href="#">
                         <img
-                          src="https://spacehey.com/img/icons/award_star_add.png"
+                          src="/logos/tiktok.png"
                           className="icon"
                           aria-hidden="true"
                           loading="lazy"
                           alt="icon"
                         />{" "}
-                        Add to Favorites
+                        Tiktok
                       </a>
                     </div>
                   </div>
@@ -381,25 +271,25 @@ export const Hero = () => {
                     <div className="f-col">
                       <a href="#">
                         <img
-                          src="https://spacehey.com/img/icons/comment.png"
+                          src="logos/instagram.png"
                           className="icon"
                           aria-hidden="true"
                           loading="lazy"
                           alt="icon"
                         />{" "}
-                        Send Message
+                        Instagram
                       </a>
                     </div>
                     <div className="f-col">
                       <a href="#">
                         <img
-                          src="https://spacehey.com/img/icons/arrow_right.png"
+                          src="logos/youtube.png"
                           className="icon"
                           aria-hidden="true"
                           loading="lazy"
                           alt="icon"
                         />{" "}
-                        Forward to Friend
+                        Youtube
                       </a>
                     </div>
                   </div>
@@ -407,150 +297,33 @@ export const Hero = () => {
                     <div className="f-col">
                       <a href="#">
                         <img
-                          src="https://spacehey.com/img/icons/email.png"
+                          src="logos/youtube.png"
                           className="icon"
                           aria-hidden="true"
                           loading="lazy"
                           alt="icon"
                         />{" "}
-                        Instant Message
+                        Youtube
                       </a>
                     </div>
                     <div className="f-col">
                       <a href="#">
                         <img
-                          src="https://spacehey.com/img/icons/exclamation.png"
+                          src="logos/steam.png"
                           className="icon"
                           aria-hidden="true"
                           loading="lazy"
                           alt="icon"
                         />{" "}
-                        Block User
+                        Steam
                       </a>
                     </div>
                   </div>
-                  <div className="f-row">
-                    <div className="f-col">
-                      <a href="#">
-                        <img
-                          src="https://spacehey.com/img/icons/group_add.png"
-                          className="icon"
-                          aria-hidden="true"
-                          loading="lazy"
-                          alt="icon"
-                        />{" "}
-                        Add to Group
-                      </a>
-                    </div>
-                    <div className="f-col">
-                      <a href="#">
-                        <img
-                          src="https://spacehey.com/img/icons/flag_red.png"
-                          className="icon"
-                          aria-hidden="true"
-                          loading="lazy"
-                          alt="icon"
-                        />{" "}
-                        Report User
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="url-info">
-                <p>
-                  <b>Zespace URL:</b>
-                </p>
-                <p></p>
-              </div>
-              <div className="table-section">
-                <div className="heading">
-                  <h4>Zengel's Interests</h4>
-                </div>
-                <div className="inner">
-                  <table
-                    className="details-table"
-                    cellSpacing={3}
-                    cellPadding={3}
-                  >
-                    <tbody>
-                      <tr>
-                        <td>
-                          <p>General</p>
-                        </td>
-                        <td>
-                          <p></p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p>Music</p>
-                        </td>
-                        <td>
-                          <p></p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p>Movies</p>
-                        </td>
-                        <td>
-                          <p></p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p>Animes</p>
-                        </td>
-                        <td>
-                          <p>
-                            {animeImages.map((anime, idx) => (
-                              <img
-                                key={idx}
-                                src={anime.url}
-                                alt={anime.name}
-                                className="inline-block mr-2 mb-2"
-                                style={{
-                                  maxHeight: "150px",
-                                  maxWidth: "150px",
-                                }}
-                                loading="lazy"
-                              />
-                            ))}
-                          </p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p>Television</p>
-                        </td>
-                        <td>
-                          <p></p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p>Books</p>
-                        </td>
-                        <td>
-                          <p></p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p>Heroes</p>
-                        </td>
-                        <td>
-                          <p></p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
                 </div>
               </div>
               <div className="table-section">
                 <div className="heading">
-                  <h4>Zengel's Links</h4>
+                  <h4>Links</h4>
                 </div>
                 <div className="inner">
                   <table
@@ -573,7 +346,7 @@ export const Hero = () => {
               </div>
               <div className="blurbs">
                 <div className="heading">
-                  <h4>Zengel's Blurbs</h4>
+                  <h4>Blurbs</h4>
                 </div>
                 <div className="inner">
                   <div className="section">
@@ -585,22 +358,18 @@ export const Hero = () => {
                           key={idx}
                           src={`/badges/${badge}`}
                           alt={`badge ${idx + 1}`}
-                          className="inline-block mr-1 mb-1"
+                          className="inline-block mb-1 mr-1"
                           style={{ maxHeight: "50px", maxWidth: "50px" }}
                           loading="lazy"
                         />
                       ))}
                     </p>
                   </div>
-                  <div className="section">
-                    <h4>Who I'd like to meet:</h4>
-                    <p></p>
-                  </div>
                 </div>
               </div>
               <div className="friends">
                 <div className="heading">
-                  <h4>Zengel's Friend Space</h4>
+                  <h4>My Homeboys</h4>
                   <a className="more" href="#">
                     [view all]
                   </a>
@@ -616,7 +385,7 @@ export const Hero = () => {
               </div>
               <div className="friends" id="comments">
                 <div className="heading">
-                  <h4>Zengel's Friends Comments</h4>
+                  <h4>Comments</h4>
                 </div>
                 <div className="inner">
                   <p>

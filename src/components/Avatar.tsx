@@ -21,7 +21,7 @@ export const Avatar = memo(
     onClick,
   }: AvatarProps) => {
     // Images to toggle between
-    const images = ["/myimg.jpeg", "/goblin.png"];
+    const images = ["/IMG_6506.jpg", "/itachi1.png"];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [particleTrigger, setParticleTrigger] = useState(0);
     const [particlePosition, setParticlePosition] = useState({ x: 0, y: 0 });
@@ -82,12 +82,12 @@ export const Avatar = memo(
             <img
               src={frameSrc}
               alt="Avatar frame"
-              className="absolute inset-0 w-full h-full object-contain z-10"
+              className="absolute inset-0 z-10 object-contain w-full h-full"
               loading="eager"
               decoding="async"
             />
             {/* Avatar - Centered inside frame */}
-            <div className="absolute inset-0 flex items-center justify-center z-0 overflow-hidden">
+            <div className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden">
               <motion.img
                 key={currentImageIndex}
                 src={currentAvatarSrc}
